@@ -1,0 +1,202 @@
+|RISCV_Core
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+
+|RISCV_Core|fetch:fetch_stage
+clk_i => clk_i.IN1
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => program_counter.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+rst_i => instruction_decode_o.OUTPUTSELECT
+pcsource_i[0] => Equal0.IN3
+pcsource_i[1] => Equal0.IN2
+instruction_decode_o[0] <= instruction_decode_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[1] <= instruction_decode_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[2] <= instruction_decode_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[3] <= instruction_decode_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[4] <= instruction_decode_o[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[5] <= instruction_decode_o[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[6] <= instruction_decode_o[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[7] <= instruction_decode_o[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[8] <= instruction_decode_o[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[9] <= instruction_decode_o[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[10] <= instruction_decode_o[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[11] <= instruction_decode_o[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[12] <= instruction_decode_o[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[13] <= instruction_decode_o[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[14] <= instruction_decode_o[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[15] <= instruction_decode_o[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[16] <= instruction_decode_o[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[17] <= instruction_decode_o[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[18] <= instruction_decode_o[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[19] <= instruction_decode_o[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[20] <= instruction_decode_o[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[21] <= instruction_decode_o[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[22] <= instruction_decode_o[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[23] <= instruction_decode_o[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[24] <= instruction_decode_o[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[25] <= instruction_decode_o[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[26] <= instruction_decode_o[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[27] <= instruction_decode_o[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[28] <= instruction_decode_o[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[29] <= instruction_decode_o[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[30] <= instruction_decode_o[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instruction_decode_o[31] <= instruction_decode_o[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RISCV_Core|fetch:fetch_stage|IRAM:instruction_ram
+clk_i => data_o[0]~reg0.CLK
+clk_i => data_o[1]~reg0.CLK
+clk_i => data_o[2]~reg0.CLK
+clk_i => data_o[3]~reg0.CLK
+clk_i => data_o[4]~reg0.CLK
+clk_i => data_o[5]~reg0.CLK
+clk_i => data_o[6]~reg0.CLK
+clk_i => data_o[7]~reg0.CLK
+clk_i => data_o[8]~reg0.CLK
+clk_i => data_o[9]~reg0.CLK
+clk_i => data_o[10]~reg0.CLK
+clk_i => data_o[11]~reg0.CLK
+clk_i => data_o[12]~reg0.CLK
+clk_i => data_o[13]~reg0.CLK
+clk_i => data_o[14]~reg0.CLK
+clk_i => data_o[15]~reg0.CLK
+clk_i => data_o[16]~reg0.CLK
+clk_i => data_o[17]~reg0.CLK
+clk_i => data_o[18]~reg0.CLK
+clk_i => data_o[19]~reg0.CLK
+clk_i => data_o[20]~reg0.CLK
+clk_i => data_o[21]~reg0.CLK
+clk_i => data_o[22]~reg0.CLK
+clk_i => data_o[23]~reg0.CLK
+clk_i => data_o[24]~reg0.CLK
+clk_i => data_o[25]~reg0.CLK
+clk_i => data_o[26]~reg0.CLK
+clk_i => data_o[27]~reg0.CLK
+clk_i => data_o[28]~reg0.CLK
+clk_i => data_o[29]~reg0.CLK
+clk_i => data_o[30]~reg0.CLK
+clk_i => data_o[31]~reg0.CLK
+address_i[0] => data.RADDR
+address_i[1] => data.RADDR1
+address_i[2] => data.RADDR2
+address_i[3] => data.RADDR3
+address_i[4] => data.RADDR4
+data_o[0] <= data_o[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[1] <= data_o[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[2] <= data_o[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[3] <= data_o[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[4] <= data_o[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[5] <= data_o[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[6] <= data_o[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[7] <= data_o[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[8] <= data_o[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[9] <= data_o[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[10] <= data_o[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[11] <= data_o[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[12] <= data_o[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[13] <= data_o[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[14] <= data_o[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[15] <= data_o[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[16] <= data_o[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[17] <= data_o[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[18] <= data_o[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[19] <= data_o[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[20] <= data_o[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[21] <= data_o[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[22] <= data_o[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[23] <= data_o[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[24] <= data_o[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[25] <= data_o[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[26] <= data_o[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[27] <= data_o[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[28] <= data_o[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[29] <= data_o[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[30] <= data_o[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_o[31] <= data_o[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RISCV_Core|decode:decode_stage
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+
+|RISCV_Core|issue:issue_stage
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+
+|RISCV_Core|execute:execute_stage
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+
+|RISCV_Core|memaccess:memaccess_stage
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+
+|RISCV_Core|writeback:writeback_stage
+clk_i => ~NO_FANOUT~
+rst_i => ~NO_FANOUT~
+
+

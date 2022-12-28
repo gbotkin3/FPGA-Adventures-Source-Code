@@ -1,0 +1,29 @@
+module DRAM
+#(
+	parameter DATAWIDTH=32,
+	parameter ADDRWIDTH=5
+)
+(
+	input logic clk_i,
+	
+	input logic write_enable,
+	input logic chip_select,
+	
+	input logic [DATAWIDTH-1:0] data_i,
+	input logic [ADDRWIDTH-1:0] address_i,	
+	
+	output logic [DATAWIDTH-1:0] data_o
+);
+
+logic [DATAWIDTH-1:0] data [ADDRWIDTH-1:0];
+
+always_ff @ (posedge clk_i) begin
+		
+	if (write_enable & chip_select) begin
+		data[address_i] <= data_i;
+	end else if (!write_enable & chip_select) begin
+		data_o <= data[address_i];
+	end
+end
+
+endmodule

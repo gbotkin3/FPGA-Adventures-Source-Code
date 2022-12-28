@@ -1,0 +1,79 @@
+m255
+K4
+z2
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/simulation/qsim
+vhard_block
+Z1 !s110 1672180371
+!i10b 1
+!s100 eReKW8MPkjgf6S[W?CFPh1
+I0^AeG>CB1SPSP5T[5KS]H0
+R0
+Z2 w1672180371
+Z3 8Risc-V_Core.vo
+Z4 FRisc-V_Core.vo
+!i122 6
+L0 193 45
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z7 !s108 1672180371.000000
+Z8 !s107 Risc-V_Core.vo|
+Z9 !s90 -work|work|Risc-V_Core.vo|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vRISCV_Core
+R1
+!i10b 1
+!s100 YQZUENEmSVL65;zZDNl6;0
+Id8hQC8<41DnDG`6@JXZ4Y3
+R0
+R2
+R3
+R4
+!i122 6
+L0 32 160
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+n@r@i@s@c@v_@core
+vRISCV_Core_vlg_vec_tst
+R1
+!i10b 1
+!s100 21G]7ng0V9B91730mVi:X0
+I3gRf@3OF78YDdUV1CTSNE1
+R0
+w1672180370
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 32
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 0
+R10
+R11
+n@r@i@s@c@v_@core_vlg_vec_tst

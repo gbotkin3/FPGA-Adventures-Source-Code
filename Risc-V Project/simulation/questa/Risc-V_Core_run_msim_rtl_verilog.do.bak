@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/Risc-V_Core.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/Risc-V_Defines&Packages.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/decode.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/issue.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/execute.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/memacess.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/writeback.sv}
+vlog -sv -work work +incdir+/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V\ Project {/home/drewarosa/git_repos/FPGA-Adventures-Source-Code/Risc-V Project/fetch.sv}
+
